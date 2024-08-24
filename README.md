@@ -35,31 +35,42 @@
 
     Postman will display the JSON response from the API. You should see a list of suppliers that match the criteria you provided.
    Example Response:
+
     {
-    "content": [],
+    "content": [
+        {
+            "supplierId": 1,
+            "companyName": "Example Supplier",
+            "website": "http://example.com",
+            "location": "India",
+            "natureOfBusiness": "small_scale",
+            "manufacturingProcesses": "3d_printing"
+        }
+    ],
     "pageable": {
+        "sort": {
+            "sorted": false,
+            "unsorted": true,
+            "empty": true
+        },
         "pageNumber": 0,
         "pageSize": 10,
-        "sort": {
-            "empty": true,
-            "sorted": false,
-            "unsorted": true
-        },
         "offset": 0,
         "paged": true,
         "unpaged": false
     },
+    "totalElements": 1,
+    "totalPages": 1,
     "last": true,
-    "totalPages": 0,
-    "totalElements": 0,
+    "first": true,
+    "sort": {
+        "sorted": false,
+        "unsorted": true,
+        "empty": true
+    },
+    "numberOfElements": 1,
     "size": 10,
     "number": 0,
-    "sort": {
-        "empty": true,
-        "sorted": false,
-        "unsorted": true
-    },
-    "numberOfElements": 0,
-    "first": true,
-    "empty": true
+    "empty": false
 }
+
